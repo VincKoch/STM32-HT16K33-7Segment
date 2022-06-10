@@ -9,11 +9,13 @@
 #define INC_HT16K33_H_
 
 #include "stdint.h"
-#include "stm32g4xx_hal.h"
+
+// !!! Adjust the following include according to your stm32 !!!
+#include "stm32g4xx_hal.h" 
 
 extern I2C_HandleTypeDef hi2c1;
 
-// I2C Configuration
+// !!! I2C Configuration !!!
 #define HT16K33_I2C_PORT        hi2c1
 #define HT16K33_I2C_ADDR        0x70
 
@@ -36,7 +38,7 @@ extern I2C_HandleTypeDef hi2c1;
 #define SEG7_F                15
 #define SEG7_SPACE            16
 #define SEG7_MINUS            17
-#define SEG7_I                18		// I & L to write "FAIL"
+#define SEG7_I                18		// I & L, e.g. to write "FAIL"
 #define SEG7_L                19
 #define SEG7_NONE             99
 
