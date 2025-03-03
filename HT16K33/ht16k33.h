@@ -11,12 +11,12 @@
 #include "stdint.h"
 
 // !!! Adjust the following include according to your stm32 !!!
-#include "stm32g4xx_hal.h" 
+#include "stm32h7xx_hal.h" 
 
-extern I2C_HandleTypeDef hi2c1;
+extern I2C_HandleTypeDef hi2c2;
 
 // !!! I2C Configuration !!!
-#define HT16K33_I2C_PORT        hi2c1
+#define HT16K33_I2C_PORT        hi2c2
 #define HT16K33_I2C_ADDR        0x70
 
 // displayable Characters
